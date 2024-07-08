@@ -1,5 +1,11 @@
 # @opentf/std
 
+## 0.13.0
+
+### Minor Changes
+
+- 8d0ddfd: Added aResolvers aync utils.
+
 ## 0.12.0
 
 ### Minor Changes
