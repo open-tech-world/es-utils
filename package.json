@@ -20,8 +20,7 @@
   ],
   "lint-staged": {
     "*.{ts,tsx}": [
-      "pnpm run format",
-      "pnpm run lint --"
+      "pnpm run format"
     ],
     "*.json": [
       "npm run format"

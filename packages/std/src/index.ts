@@ -42,6 +42,7 @@ export { default as aPipe } from './async/aPipe';
 export { default as aPipeFn } from './async/aPipeFn';
 export { default as aCompose } from './async/aCompose';
 export { default as aComposeFn } from './async/aComposeFn';
+export { default as aResolvers } from './async/aResolvers';
 
 // Maths
 export { default as percentage } from './maths/percentage';

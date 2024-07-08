@@ -63,6 +63,9 @@ Let’s explore some of the library’s capabilities:
 import { isNum } from "@opentf/std";
 
 isNum(NaN); //=> false
+isNum('1'); //=> false
+isNum('1', true); //=> true
+isNum(1); //=> true
 ```
 
 2. Converting Strings to Pascal Case:
@@ -136,6 +139,18 @@ compose(
 ); //=> 6
 ```
 
+8. Pick & Omit Paths in an Object
+
+```js
+import { pick omit } from '@opentf/std';
+ 
+const obj = { a: 1, b: 2, c: 3 };
+ 
+pick(obj, 'a', 'c'); //=> { a: 1, c: 3 }
+ 
+omit(obj, 'a', 'c'); //=> { b: 2 }
+```
+
 ## API
 
 ### Array
@@ -175,6 +190,7 @@ compose(
 - [aMap](https://js-std.pages.dev/Async/aMap)
 - [aPipe](https://js-std.pages.dev/Async/aPipe)
 - [aPipeFn](https://js-std.pages.dev/Async/aPipeFn)
+- [aResolvers](https://js-std.pages.dev/Async/aResolvers)
 
 ### Maths
 
